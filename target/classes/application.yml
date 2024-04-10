@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/finance-db
+    username: postgres
+    password: postgres
+  flyway:
+    locations: classpath:db/migration/common,classpath:db/migration/data
+  jpa:
+    hibernate:
+      ddl-auto: none
+    database: postgresql
+    properties:
+      hibernate:
+        generate_statistics: false
+    show-sql: false
+app:
+  jwt:
+    secret: ${JWT_SECRET:kdCEe%1S9(TZHgEQq4AcG>*?A''z&);#s№@=№6~A3V'8hQrN!iGYrvSM<@+}ZKl3}
+    expirationMs: 172800000 # 2 days
+  minLoanAmount: 100
+  maxLoanAmount: 15000
+  minLoanTermInDays: 30 # 1 month
+  maxLoanTermInDays: 1800 # 5 years
+  maxLoanRequestsPerIpPerDay: 3
+  loanExtensionMultiplier: 1.5
+  loanInterestRateShortTerm: 0.129 # 30-359 days // 1 month-1 year // 12.9%
+  loanInterestRateMediumTerm: 0.114 # 360-719 days // 1-2 years // 11.4%
+  loanInterestRateLongTerm: 0.099 # 720-2160 days // 2-6 years // 9.9%
+  defaultLoanExtensionTermInDays: 7
+  isValidPersonalCodeRequired: false # If true, personal code must be valid. Set to false for testing purposes.
+

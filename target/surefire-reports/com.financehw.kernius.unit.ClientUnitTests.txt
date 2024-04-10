@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.financehw.kernius.unit.ClientUnitTests
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.194 s -- in com.financehw.kernius.unit.ClientUnitTests

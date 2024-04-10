@@ -1,0 +1,20 @@
+version: '3.1'
+
+services:
+  finance-server:
+    image: kerniussur/credit-server:latest
+    depends_on:
+      - finance-db
+    ports:
+      - "8080:8080"
+
+  finance-db:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: finance-db
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data

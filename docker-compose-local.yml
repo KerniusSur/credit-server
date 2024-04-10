@@ -1,0 +1,17 @@
+version: '3.1'
+
+services:
+  db:
+    image: postgres
+    container_name: finance-db
+    restart: always
+    hostname: localhost
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_HOST_AUTH_METHOD: trust
+      POSTGRES_DB: finance-db
+    volumes:
+      - .db:/var/lib/postgresql/
+    ports:
+      - "5432:5432"

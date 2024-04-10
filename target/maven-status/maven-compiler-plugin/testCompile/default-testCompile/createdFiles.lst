@@ -1,0 +1,8 @@
+com/financehw/kernius/unit/LoanExtensionUnitTests.class
+com/financehw/kernius/unit/AuthUnitTests.class
+com/financehw/kernius/utils/TestDataFactory.class
+com/financehw/kernius/unit/LoanUnitTests.class
+com/financehw/kernius/acceptance/LoanExtensionAcceptanceTests.class
+com/financehw/kernius/utils/IntegrationTest.class
+com/financehw/kernius/acceptance/LoanAcceptanceTests.class
+com/financehw/kernius/unit/ClientUnitTests.class

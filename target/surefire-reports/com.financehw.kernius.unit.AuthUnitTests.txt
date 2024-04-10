@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.financehw.kernius.unit.AuthUnitTests
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.528 s -- in com.financehw.kernius.unit.AuthUnitTests

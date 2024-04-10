@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:5432/finance-db
+    username: postgres
+    password: postgres
+  flyway:
+    # Normally we shouldn't use data inserting migrations in production, but we will use it for this homework
+    locations: classpath:db/migration/common,classpath:db/migration/data
